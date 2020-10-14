@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>[Excel]VLOOKUP函数的使用(入门) | Office技巧笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://dw.natuki.cc/favicon.ico?v=1602654905859">
+<link rel="stylesheet" href="https://dw.natuki.cc/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="在查找了一些网上的Excel技巧之后，我们应该意识到Excel技巧不仅仅只局限于图表的设计，同时函数的使用也是Excel技巧中的一部分。因此，这篇文章将从一个Excel表格中广泛使用的函数VLOOKUP入手，介绍这个函数的使用。
+
+VLOO..." />
+    <meta name="keywords" content="函数,Excel,设计" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://dw.natuki.cc">
+        <img src="https://dw.natuki.cc/images/avatar.png?v=1602654905859" class="site-logo">
+        <h1 class="site-title">Office技巧笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://dw.natuki.cc" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://dw.natuki.cc/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">[Excel]VLOOKUP函数的使用(入门)</h2>
+            <div class="post-date">2020-08-15</div>
+            
+            <div class="post-content" v-pre>
+              <p>在查找了一些网上的Excel技巧之后，我们应该意识到Excel技巧不仅仅只局限于图表的设计，同时函数的使用也是Excel技巧中的一部分。因此，这篇文章将从一个Excel表格中广泛使用的函数VLOOKUP入手，介绍这个函数的使用。</p>
+<!-- more -->
+<h2 id="vlookup函数是什么">VLOOKUP函数是什么</h2>
+<p>VLOOKUP是Excel中的一个纵向查找函数，常用来进行数据核对、快速引用多个表格间的数据、制作动态表格等。</p>
+<p>VLOOKUP函数主要包括以下四个参数：</p>
+<ul>
+<li>lookup_value：要查找的数值、引用或文本字符串</li>
+<li>table_array：被查找的区域 (数据表区域)</li>
+<li>col_index_num：返回的数据在查找区域的第几列 (正整数)</li>
+<li>[range_lookup]：近似匹配或精确匹配 (TRUE/FALSE) (可空)</li>
+</ul>
+<h2 id="举个例子">举个例子</h2>
+<p>下面，通过一个简单的例子讲解VLOOKUP这个函数：要求在水果价格表中寻找柠檬的单价。<br>
+<img src="https://dw.natuki.cc/post-images/1597461576655.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1597461317072.png" alt="" loading="lazy"><br>
+其中，单元格<code>D2</code>中的 &quot;柠檬&quot; 是要查找的内容；<code>A2:B5</code>为水果价格表的范围(即被查找的区域)；<code>2</code>表示的是单价在水果单价表的第二列；为了精确获得水果的单价，则不使用近似匹配，填<code>FALSE</code>。<br>
+最终函数：<code>=VLOOKUP(D2, A2:B5, 2, FALSE)</code></p>
+<p>在刚开始使用VLOOKUP函数时，也可以使用函数参数窗口帮助填写，效果与直接输入函数相同，但方便初学者更加直观地理解VLOOKUP函数：<br>
+<img src="https://dw.natuki.cc/post-images/1597462251210.png" alt="" loading="lazy"></p>
+<h2 id="近似查找或精确查找">近似查找或精确查找?</h2>
+<p>VLOOKUP函数的第四个参数<code>range_lookup</code>中近似查找和精确查找应该如何选择呢？<br>
+<strong>近似查找：</strong> 当参数为：<code>TRUE</code>或者<code>1</code>时，表示近似查找。当无法找到精确的数值时，函数会选择小于查找内容的最大值。<br>
+<strong>精确查找：</strong> 当参数为：<code>FALSE</code>，<code>0</code>或者不填时，都可代表精确查找，如果找不到要查找的内容，函数便返回错误。</p>
+<h2 id="注意事项">注意事项</h2>
+<p>目前来看，介绍的VLOOKUP函数的使用时十分简单的，但使用时还需要注意以下几点。</p>
+<ul>
+<li>查找值中不可有重复值。如果查找值中有重复值，所有的重复值都讲返回一个相同的值。</li>
+<li>如果没有特殊的要求，一般对查找区域进行<strong>绝对引用</strong>，可以有效避免拖动公式填充单元格时导致的数据报错。</li>
+<li><code>lookup_value</code>单元格中的查找值必须存在于被查找区域。有时发现公式的使用没有问题，却返回错误，可能就是查找值不存在于被查找的区域，此时可以检测查找值是否存在拼写错误、是否存在多余的空格等等。</li>
+<li>表格中数据格式统一也是尤为重要的。如果你检查了所有内容确定没有问题，但仍然返回错误，可以查看是否是数据格式不同所造成的。</li>
+</ul>
+<h2 id="常见套路">常见套路</h2>
+<p>在经过函数的基础介绍之后，下面将分享一下在实际情况中可能会用到的套路。</p>
+<h3 id="1多条件查找">1.多条件查找</h3>
+<p>多条件查找除了涉及VLOOKUP函数的使用外，还涉及到使用&amp;符号合并单元格中的内容，以及使用IF函数构建二维数组。<br>
+例如在下面的例子中，由于每个班级都存在一个姓名为Bart的同学，因此只根据姓名查找该学生的考核分数是无法实现的，因此我们还需要加入其他搜索条件，例子中以班级作为其他搜索条件。<br>
+<img src="https://dw.natuki.cc/post-images/1597472386509.png" alt="" loading="lazy"><br>
+<code>F2&amp;G2</code>表示将F2单元格中的 &quot;Bart&quot; 和G2单元格中的 &quot;19文产1班&quot; 合并为 &quot;Bart19文产1班&quot; 作为查找值；<br>
+<code>IF({1,0}, A2:A12&amp;B2:B12, C2:C12)</code>表示将创建如下的二维数组，它将待查找范围中每行的姓名和班级合并为一列，考核分数作为另外一列：<br>
+<img src="https://dw.natuki.cc/post-images/1597472891114.png" alt="" loading="lazy"><br>
+总而言之，多条件查找的原理就是将多个条件合并为一个搜索值，在同样做合并处理的搜索范围中进行查找，从而避免单个条件重复的问题。<br>
+<img src="https://dw.natuki.cc/post-images/1597473273543.png" alt="" loading="lazy"><br>
+最终函数：<code>=VLOOKUP(F2&amp;G2,IF({1,0}, A2:A12&amp;B2:B12, C2:C12),2,FALSE)</code></p>
+<h3 id="2反向查找">2.反向查找</h3>
+<p>与前面介绍VLOOKUP函数时所举的查找水果单价的例子类似，但在这还需要通过IF函数调整一下列的位置<br>
+<img src="https://dw.natuki.cc/post-images/1597475512360.png" alt="" loading="lazy"><br>
+这里，使用IF函数时，将条件填写成<code>{0,1}</code>，将翻转两列数据的到如下的二维数组:<br>
+<img src="https://dw.natuki.cc/post-images/1597476003661.png" alt="" loading="lazy"><br>
+最终，实现从单价到种类的反向查找。<br>
+<img src="https://dw.natuki.cc/post-images/1597476099128.png" alt="" loading="lazy"><br>
+最终函数：<code>=VLOOKUP(D2,IF({0,1}, A2:A5, B2:B5), 2, FALSE)</code></p>
+<p>总的来说，在实际的Excel表格设计中，VLOOKUP函数的使用不仅仅局限于以上的情景，且函数的使用总是存在着嵌套的，这就需要在今后的工作或学习中仔细考虑，灵活运用，以上就是VLOOKUP的入门使用的全部内容了。<br>
+(完)</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://dw.natuki.cc/tag/eLw622FLt/" class="tag">
+                    函数
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/Z6vWhgthR/" class="tag">
+                    Excel
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/vNpeOQMG_V/" class="tag">
+                    设计
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://dw.natuki.cc/post/design-a-contrast-bar-chart/">
+                  <h3 class="post-title">
+                    [Excel]对比柱状图的设计
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

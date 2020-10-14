@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>[Excel]设计表格时常用的自带功能介绍: 数据透视 | Office技巧笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://dw.natuki.cc/favicon.ico?v=1602654905859">
+<link rel="stylesheet" href="https://dw.natuki.cc/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="什么是数据透视
+Excel中的数据透视包括数据透视图和数据透视表两个部分。数据透视表用于汇总、分析、浏览和呈现汇总数据。数据透视图通过对数据透视表中的汇总数据进行可视化补充，以便用户轻松查看、分析和比较数据。在企业中，常借助两者配合，以便对..." />
+    <meta name="keywords" content="数据透视,Excel,设计,图表" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://dw.natuki.cc">
+        <img src="https://dw.natuki.cc/images/avatar.png?v=1602654905859" class="site-logo">
+        <h1 class="site-title">Office技巧笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://dw.natuki.cc" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://dw.natuki.cc/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">[Excel]设计表格时常用的自带功能介绍: 数据透视</h2>
+            <div class="post-date">2020-08-22</div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="什么是数据透视">什么是数据透视</h2>
+<p>Excel中的数据透视包括数据透视图和数据透视表两个部分。数据透视表用于汇总、分析、浏览和呈现汇总数据。数据透视图通过对数据透视表中的汇总数据进行可视化补充，以便用户轻松查看、分析和比较数据。在企业中，常借助两者配合，以便对关键数据做出明智决策。</p>
+<!-- more -->
+<h2 id="如何进行数据透视">如何进行数据透视</h2>
+<p>如图所示，数据透视功能位于Excel选项卡的 &quot;插入&quot; 部分。有时，使用系统推荐的透视图表已经可以满足我们的需求，但更多时候，我们需要自定义其中的字段。<br>
+<img src="https://dw.natuki.cc/post-images/1598087991490.png" alt="" loading="lazy"><br>
+仅需要数据透视表功能的话可以选择前两个按钮，如果需要生成对应的数据透视图表则选择 &quot;数据透视图&quot; 选项。</p>
+<h2 id="举个例子">举个例子</h2>
+<p>以下，以多个班级的同学理综成绩为例，介绍数据透视表的创建。<br>
+<img src="https://dw.natuki.cc/post-images/1598088536222.png" alt="" loading="lazy"></p>
+<ol>
+<li>
+<p>选中包括表头在内的所有数据，确认数据区域无误后，即可创建数据透视表和数据透视图。<br>
+<img src="https://dw.natuki.cc/post-images/1598088618389.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598089108998.png" alt="" loading="lazy"><br>
+如果将数据透视创建在新的工作表，可以通过左下角的标签在原始数据表格和数据透视表格之间进行切换。</p>
+</li>
+<li>
+<p>在右侧依次勾选需要显示的字段，如果顺序有误也可以通过拖拽右下方的行和值项目进行调整。<br>
+<img src="https://dw.natuki.cc/post-images/1598089346715.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>显然对于每个班成绩的显示中，求和全体班级成绩不是我们所需要的，我们可以通过左键单击右下角 &quot;值&quot; 中的项目，在 &quot;值字段设置&quot; 选项根据不同的使用场景进行调整，对于成绩来说则设置为显示平均值。<br>
+<img src="https://dw.natuki.cc/post-images/1598089638148.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598089797082.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598089852739.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>对于求平均值后小数数位过多的问题，我们可以在第3步中 &quot;值字段设置&quot; 对话框右下角的&quot;数字格式&quot;中进行调整，设置窗口与平常表格中设置单元格格式的选项是一致的。<br>
+<img src="https://dw.natuki.cc/post-images/1598090039745.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598090510666.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+<p>至此，数据透视的基本使用就介绍完毕了。而数据透视表和数据透视图的显示，可以根据实际使用情况进行放大缩小、折叠展开等等。</p>
+<p>(完)</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://dw.natuki.cc/tag/ioCxilcPx/" class="tag">
+                    数据透视
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/Z6vWhgthR/" class="tag">
+                    Excel
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/vNpeOQMG_V/" class="tag">
+                    设计
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/JpssOjCGES/" class="tag">
+                    图表
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://dw.natuki.cc/post/different-image-fill-pattern-in-bar-chart/">
+                  <h3 class="post-title">
+                    [Excel]柱形图/条形图进阶: 图片的填充形式
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

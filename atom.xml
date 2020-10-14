@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dw.natuki.cc</id>
+    <title>Office技巧笔记</title>
+    <updated>2020-10-14T05:55:18.410Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://dw.natuki.cc"/>
+    <link rel="self" href="https://dw.natuki.cc/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://dw.natuki.cc/images/avatar.png</logo>
+    <icon>https://dw.natuki.cc/favicon.ico</icon>
+    <rights>All rights reserved 2020, Office技巧笔记</rights>
+    <entry>
+        <title type="html"><![CDATA[[Excel]设计表格时常用的自带功能介绍: 条件格式]]></title>
+        <id>https://dw.natuki.cc/post/how-to-use-conditional-formatting/</id>
+        <link href="https://dw.natuki.cc/post/how-to-use-conditional-formatting/">
+        </link>
+        <updated>2020-09-11T03:00:26.000Z</updated>
+        <summary type="html"><![CDATA[<p>条件格式是设计Excel表格中常用的功能之一，可以帮助我们通过Excel默认的规则或是自定义规则使用条、颜色、图标轻松地浏览数据的趋势和模式，直观地突出显示重要的值。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>条件格式是设计Excel表格中常用的功能之一，可以帮助我们通过Excel默认的规则或是自定义规则使用条、颜色、图标轻松地浏览数据的趋势和模式，直观地突出显示重要的值。</p>
+<!-- more -->
+<h2 id="如何使用条件格式">如何使用条件格式</h2>
+<p>条件格式位于Excel顶部选项卡开始栏的中间位置<br>
+<img src="https://dw.natuki.cc/post-images/1599793698621.png" alt="" loading="lazy"></p>
+<h2 id="突出显示单元格规则">突出显示单元格规则</h2>
+<figure data-type="image" tabindex="1"><img src="https://dw.natuki.cc/post-images/1599815661603.png" alt="" loading="lazy"></figure>
+<h3 id="大于">大于</h3>
+<p>例如，突出显示营业额大于615万元的地区：<br>
+<img src="https://dw.natuki.cc/post-images/1599815507093.png" alt="" loading="lazy"></p>
+<h3 id="小于">小于</h3>
+<p>例如，突出显示营业额小于615万元的地区：<br>
+<img src="https://dw.natuki.cc/post-images/1599815565779.png" alt="" loading="lazy"></p>
+<h3 id="介于">介于</h3>
+<p>例如，突出显示营业额介于423万元到807万元之间的地区：<br>
+<img src="https://dw.natuki.cc/post-images/1599815777440.png" alt="" loading="lazy"></p>
+<h3 id="等于">等于</h3>
+<p>例如，突出显示营业额等于671万元的地区：<br>
+<img src="https://dw.natuki.cc/post-images/1599816096153.png" alt="" loading="lazy"></p>
+<h3 id="文本包含">文本包含</h3>
+<p>例如，突出显示地区名称中包含“南”字的地区：<br>
+<img src="https://dw.natuki.cc/post-images/1599816213536.png" alt="" loading="lazy"></p>
+<h3 id="重复值">重复值</h3>
+<p>可以显示数据中的重复值或唯一值：<br>
+<img src="https://dw.natuki.cc/post-images/1599816317443.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1599816325826.png" alt="" loading="lazy"></p>
+<h2 id="突出显示单元格规则-2">突出显示单元格规则</h2>
+<h3 id="前十项">前十项</h3>
+<p>默认突出显示数据中的数值从大到小的前10项，也可以调整显示的范围(例子中调整为5)：<br>
+<img src="https://dw.natuki.cc/post-images/1599817708907.png" alt="" loading="lazy"></p>
+<h3 id="前10">前10%</h3>
+<p>默认突出显示数据中的数值从大到小的前10%，也可以调整显示的范围：<br>
+<img src="https://dw.natuki.cc/post-images/1599820987015.png" alt="" loading="lazy"></p>
+<h3 id="最后十项">最后十项</h3>
+<p>与前十项的设置类似，默认突出显示数值从大到小的后10项。</p>
+<h3 id="最后10">最后10%</h3>
+<p>与前10%的设置类似，默认突出显示数值从大到小的后10%。</p>
+<h3 id="高于平均值">高于平均值</h3>
+<p>突出显示数据中高于平均值的项：<br>
+<img src="https://dw.natuki.cc/post-images/1599821393569.png" alt="" loading="lazy"></p>
+<h3 id="低于平均值">低于平均值</h3>
+<p>与高于平均值的设置类似，突出显示数据中低于平均值的项。</p>
+<h2 id="数据条">数据条</h2>
+<p>可以为数据添加带颜色的数据条，数据的值越大，数据条越长，且有多种不同的风格提供选择。<br>
+<img src="https://dw.natuki.cc/post-images/1599821706793.png" alt="" loading="lazy"></p>
+<h2 id="色阶">色阶</h2>
+<p>使用不同的颜色渐变展示数据的大致范围、排序。<br>
+<img src="https://dw.natuki.cc/post-images/1599821743608.png" alt="" loading="lazy"></p>
+<h2 id="图标集">图标集</h2>
+<p>使用不同的图标展示数据的大致范围、排序。<br>
+<img src="https://dw.natuki.cc/post-images/1599824845435.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1599824882740.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Excel]设计表格时常用的自带功能介绍: 数据透视]]></title>
+        <id>https://dw.natuki.cc/post/how-to-use-pivot-table/</id>
+        <link href="https://dw.natuki.cc/post/how-to-use-pivot-table/">
+        </link>
+        <updated>2020-08-22T09:08:08.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="什么是数据透视">什么是数据透视</h2>
+<p>Excel中的数据透视包括数据透视图和数据透视表两个部分。数据透视表用于汇总、分析、浏览和呈现汇总数据。数据透视图通过对数据透视表中的汇总数据进行可视化补充，以便用户轻松查看、分析和比较数据。在企业中，常借助两者配合，以便对关键数据做出明智决策。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="什么是数据透视">什么是数据透视</h2>
+<p>Excel中的数据透视包括数据透视图和数据透视表两个部分。数据透视表用于汇总、分析、浏览和呈现汇总数据。数据透视图通过对数据透视表中的汇总数据进行可视化补充，以便用户轻松查看、分析和比较数据。在企业中，常借助两者配合，以便对关键数据做出明智决策。</p>
+<!-- more -->
+<h2 id="如何进行数据透视">如何进行数据透视</h2>
+<p>如图所示，数据透视功能位于Excel选项卡的 &quot;插入&quot; 部分。有时，使用系统推荐的透视图表已经可以满足我们的需求，但更多时候，我们需要自定义其中的字段。<br>
+<img src="https://dw.natuki.cc/post-images/1598087991490.png" alt="" loading="lazy"><br>
+仅需要数据透视表功能的话可以选择前两个按钮，如果需要生成对应的数据透视图表则选择 &quot;数据透视图&quot; 选项。</p>
+<h2 id="举个例子">举个例子</h2>
+<p>以下，以多个班级的同学理综成绩为例，介绍数据透视表的创建。<br>
+<img src="https://dw.natuki.cc/post-images/1598088536222.png" alt="" loading="lazy"></p>
+<ol>
+<li>
+<p>选中包括表头在内的所有数据，确认数据区域无误后，即可创建数据透视表和数据透视图。<br>
+<img src="https://dw.natuki.cc/post-images/1598088618389.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598089108998.png" alt="" loading="lazy"><br>
+如果将数据透视创建在新的工作表，可以通过左下角的标签在原始数据表格和数据透视表格之间进行切换。</p>
+</li>
+<li>
+<p>在右侧依次勾选需要显示的字段，如果顺序有误也可以通过拖拽右下方的行和值项目进行调整。<br>
+<img src="https://dw.natuki.cc/post-images/1598089346715.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>显然对于每个班成绩的显示中，求和全体班级成绩不是我们所需要的，我们可以通过左键单击右下角 &quot;值&quot; 中的项目，在 &quot;值字段设置&quot; 选项根据不同的使用场景进行调整，对于成绩来说则设置为显示平均值。<br>
+<img src="https://dw.natuki.cc/post-images/1598089638148.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598089797082.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598089852739.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>对于求平均值后小数数位过多的问题，我们可以在第3步中 &quot;值字段设置&quot; 对话框右下角的&quot;数字格式&quot;中进行调整，设置窗口与平常表格中设置单元格格式的选项是一致的。<br>
+<img src="https://dw.natuki.cc/post-images/1598090039745.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598090510666.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+<p>至此，数据透视的基本使用就介绍完毕了。而数据透视表和数据透视图的显示，可以根据实际使用情况进行放大缩小、折叠展开等等。</p>
+<p>(完)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Excel]柱形图/条形图进阶: 图片的填充形式]]></title>
+        <id>https://dw.natuki.cc/post/different-image-fill-pattern-in-bar-chart/</id>
+        <link href="https://dw.natuki.cc/post/different-image-fill-pattern-in-bar-chart/">
+        </link>
+        <updated>2020-08-22T02:13:18.000Z</updated>
+        <summary type="html"><![CDATA[<p>在设计柱形图或条形图的过程中，采用不同的图片填充形式，可以产生不同的效果。下面将分别介绍采用不同的图片填充形式的柱状图和条形图。<br>
+<img src="https://dw.natuki.cc/post-images/1598063693273.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598063700651.png" alt="" loading="lazy"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在设计柱形图或条形图的过程中，采用不同的图片填充形式，可以产生不同的效果。下面将分别介绍采用不同的图片填充形式的柱状图和条形图。<br>
+<img src="https://dw.natuki.cc/post-images/1598063693273.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598063700651.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="原始数据">原始数据</h2>
+<p>以统计某游戏的男女玩家占比情况为例，以下为本次介绍所使用的原始数据：</p>
+<table>
+<thead>
+<tr>
+<th>性别</th>
+<th>比例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>男</td>
+<td>62%</td>
+</tr>
+<tr>
+<td>女</td>
+<td>38%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="条形图-层叠填充方式">条形图: 层叠填充方式</h2>
+<ol>
+<li>选中数据，插入簇状条形图，并修改标题<br>
+<img src="https://dw.natuki.cc/post-images/1598064308603.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598065077319.png" alt="" loading="lazy"></li>
+<li>双击选定单个条形图，设置图片填充<br>
+<img src="https://dw.natuki.cc/post-images/1598065929961.png" alt="" loading="lazy"></li>
+<li>设置图片的填充形式为叠层<br>
+<img src="https://dw.natuki.cc/post-images/1598066461117.png" alt="" loading="lazy"></li>
+<li>以同样的方式为另一个条形图设置样式<br>
+<img src="https://dw.natuki.cc/post-images/1598066596445.png" alt="" loading="lazy"></li>
+<li>单击选中两个条形图，添加数据标签<br>
+<img src="https://dw.natuki.cc/post-images/1598066701692.png" alt="" loading="lazy"><br>
+至此，使用图片叠层填充方式的条形图就设计完成了。<br>
+<img src="https://dw.natuki.cc/post-images/1598066804377.png" alt="" loading="lazy"></li>
+</ol>
+<h2 id="柱形图层叠并缩放">柱形图：层叠并缩放</h2>
+<ol>
+<li>先为原始数据添加辅助列，其中 &quot;100%&quot; 为比例的最大值<br>
+<img src="https://dw.natuki.cc/post-images/1598068948830.png" alt="" loading="lazy"></li>
+<li>选中数据，插入簇状柱形图<br>
+<img src="https://dw.natuki.cc/post-images/1598069435491.png" alt="" loading="lazy"></li>
+<li>切换行/列，调整成如下所示<br>
+<img src="https://dw.natuki.cc/post-images/1598069518097.png" alt="" loading="lazy"></li>
+<li>单击选中柱形图，设置系列重叠为100%<br>
+<img src="https://dw.natuki.cc/post-images/1598069788113.png" alt="" loading="lazy"></li>
+<li>双击选中单个柱形图的蓝色部分，使用图片进行填充<br>
+<img src="https://dw.natuki.cc/post-images/1598069949692.png" alt="" loading="lazy"></li>
+<li>同样双击选中单个柱形图的橙色部分，使用图片进行填充，并将图片填充方式设置为层叠并缩放<br>
+<img src="https://dw.natuki.cc/post-images/1598070171576.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1598070544462.png" alt="" loading="lazy"></li>
+<li>为另一组柱形图重复以上步骤<br>
+<img src="https://dw.natuki.cc/post-images/1598070856772.png" alt="" loading="lazy"></li>
+<li>单击选中两组柱形图，调整间隙宽度使图片适应图表大小<br>
+<img src="https://dw.natuki.cc/post-images/1598071002773.png" alt="" loading="lazy"></li>
+<li>单击选中两个条形图，添加数据标签<br>
+<img src="https://dw.natuki.cc/post-images/1598071120424.png" alt="" loading="lazy"><br>
+至此，使用图片叠层并缩放填充方式的条形图就设计完成了。(可以自行修改图表标题，以及删除下方的图例)<br>
+<img src="https://dw.natuki.cc/post-images/1598071290098.png" alt="" loading="lazy"></li>
+</ol>
+<h2 id="一些补充">一些补充</h2>
+<ul>
+<li>图标的选择可以参考：<a href="https://www.iconfont.cn/">iconfont图标矢量库</a></li>
+<li>对于条形图中图片的层叠填充方式，图片的选择建议宽度要紧凑，在下载iconfont的图标图片后，可以使用PS清除部分透明像素，将会使得条形图更加美观</li>
+<li>而对于柱形图中层叠并缩放的填充方式，在以上的介绍中至少需要准备两组不同颜色的图表图片，一组作为背景一组作为前置的填充，如下所示<br>
+<img src="https://dw.natuki.cc/post-images/1598071730104.png" alt="" loading="lazy"></li>
+</ul>
+<p>(完)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Excel]VLOOKUP函数的使用(入门)]]></title>
+        <id>https://dw.natuki.cc/post/how-to-use-vlookup-function-easily/</id>
+        <link href="https://dw.natuki.cc/post/how-to-use-vlookup-function-easily/">
+        </link>
+        <updated>2020-08-14T17:00:03.000Z</updated>
+        <summary type="html"><![CDATA[<p>在查找了一些网上的Excel技巧之后，我们应该意识到Excel技巧不仅仅只局限于图表的设计，同时函数的使用也是Excel技巧中的一部分。因此，这篇文章将从一个Excel表格中广泛使用的函数VLOOKUP入手，介绍这个函数的使用。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在查找了一些网上的Excel技巧之后，我们应该意识到Excel技巧不仅仅只局限于图表的设计，同时函数的使用也是Excel技巧中的一部分。因此，这篇文章将从一个Excel表格中广泛使用的函数VLOOKUP入手，介绍这个函数的使用。</p>
+<!-- more -->
+<h2 id="vlookup函数是什么">VLOOKUP函数是什么</h2>
+<p>VLOOKUP是Excel中的一个纵向查找函数，常用来进行数据核对、快速引用多个表格间的数据、制作动态表格等。</p>
+<p>VLOOKUP函数主要包括以下四个参数：</p>
+<ul>
+<li>lookup_value：要查找的数值、引用或文本字符串</li>
+<li>table_array：被查找的区域 (数据表区域)</li>
+<li>col_index_num：返回的数据在查找区域的第几列 (正整数)</li>
+<li>[range_lookup]：近似匹配或精确匹配 (TRUE/FALSE) (可空)</li>
+</ul>
+<h2 id="举个例子">举个例子</h2>
+<p>下面，通过一个简单的例子讲解VLOOKUP这个函数：要求在水果价格表中寻找柠檬的单价。<br>
+<img src="https://dw.natuki.cc/post-images/1597461576655.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1597461317072.png" alt="" loading="lazy"><br>
+其中，单元格<code>D2</code>中的 &quot;柠檬&quot; 是要查找的内容；<code>A2:B5</code>为水果价格表的范围(即被查找的区域)；<code>2</code>表示的是单价在水果单价表的第二列；为了精确获得水果的单价，则不使用近似匹配，填<code>FALSE</code>。<br>
+最终函数：<code>=VLOOKUP(D2, A2:B5, 2, FALSE)</code></p>
+<p>在刚开始使用VLOOKUP函数时，也可以使用函数参数窗口帮助填写，效果与直接输入函数相同，但方便初学者更加直观地理解VLOOKUP函数：<br>
+<img src="https://dw.natuki.cc/post-images/1597462251210.png" alt="" loading="lazy"></p>
+<h2 id="近似查找或精确查找">近似查找或精确查找?</h2>
+<p>VLOOKUP函数的第四个参数<code>range_lookup</code>中近似查找和精确查找应该如何选择呢？<br>
+<strong>近似查找：</strong> 当参数为：<code>TRUE</code>或者<code>1</code>时，表示近似查找。当无法找到精确的数值时，函数会选择小于查找内容的最大值。<br>
+<strong>精确查找：</strong> 当参数为：<code>FALSE</code>，<code>0</code>或者不填时，都可代表精确查找，如果找不到要查找的内容，函数便返回错误。</p>
+<h2 id="注意事项">注意事项</h2>
+<p>目前来看，介绍的VLOOKUP函数的使用时十分简单的，但使用时还需要注意以下几点。</p>
+<ul>
+<li>查找值中不可有重复值。如果查找值中有重复值，所有的重复值都讲返回一个相同的值。</li>
+<li>如果没有特殊的要求，一般对查找区域进行<strong>绝对引用</strong>，可以有效避免拖动公式填充单元格时导致的数据报错。</li>
+<li><code>lookup_value</code>单元格中的查找值必须存在于被查找区域。有时发现公式的使用没有问题，却返回错误，可能就是查找值不存在于被查找的区域，此时可以检测查找值是否存在拼写错误、是否存在多余的空格等等。</li>
+<li>表格中数据格式统一也是尤为重要的。如果你检查了所有内容确定没有问题，但仍然返回错误，可以查看是否是数据格式不同所造成的。</li>
+</ul>
+<h2 id="常见套路">常见套路</h2>
+<p>在经过函数的基础介绍之后，下面将分享一下在实际情况中可能会用到的套路。</p>
+<h3 id="1多条件查找">1.多条件查找</h3>
+<p>多条件查找除了涉及VLOOKUP函数的使用外，还涉及到使用&amp;符号合并单元格中的内容，以及使用IF函数构建二维数组。<br>
+例如在下面的例子中，由于每个班级都存在一个姓名为Bart的同学，因此只根据姓名查找该学生的考核分数是无法实现的，因此我们还需要加入其他搜索条件，例子中以班级作为其他搜索条件。<br>
+<img src="https://dw.natuki.cc/post-images/1597472386509.png" alt="" loading="lazy"><br>
+<code>F2&amp;G2</code>表示将F2单元格中的 &quot;Bart&quot; 和G2单元格中的 &quot;19文产1班&quot; 合并为 &quot;Bart19文产1班&quot; 作为查找值；<br>
+<code>IF({1,0}, A2:A12&amp;B2:B12, C2:C12)</code>表示将创建如下的二维数组，它将待查找范围中每行的姓名和班级合并为一列，考核分数作为另外一列：<br>
+<img src="https://dw.natuki.cc/post-images/1597472891114.png" alt="" loading="lazy"><br>
+总而言之，多条件查找的原理就是将多个条件合并为一个搜索值，在同样做合并处理的搜索范围中进行查找，从而避免单个条件重复的问题。<br>
+<img src="https://dw.natuki.cc/post-images/1597473273543.png" alt="" loading="lazy"><br>
+最终函数：<code>=VLOOKUP(F2&amp;G2,IF({1,0}, A2:A12&amp;B2:B12, C2:C12),2,FALSE)</code></p>
+<h3 id="2反向查找">2.反向查找</h3>
+<p>与前面介绍VLOOKUP函数时所举的查找水果单价的例子类似，但在这还需要通过IF函数调整一下列的位置<br>
+<img src="https://dw.natuki.cc/post-images/1597475512360.png" alt="" loading="lazy"><br>
+这里，使用IF函数时，将条件填写成<code>{0,1}</code>，将翻转两列数据的到如下的二维数组:<br>
+<img src="https://dw.natuki.cc/post-images/1597476003661.png" alt="" loading="lazy"><br>
+最终，实现从单价到种类的反向查找。<br>
+<img src="https://dw.natuki.cc/post-images/1597476099128.png" alt="" loading="lazy"><br>
+最终函数：<code>=VLOOKUP(D2,IF({0,1}, A2:A5, B2:B5), 2, FALSE)</code></p>
+<p>总的来说，在实际的Excel表格设计中，VLOOKUP函数的使用不仅仅局限于以上的情景，且函数的使用总是存在着嵌套的，这就需要在今后的工作或学习中仔细考虑，灵活运用，以上就是VLOOKUP的入门使用的全部内容了。<br>
+(完)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Excel]对比柱状图的设计]]></title>
+        <id>https://dw.natuki.cc/post/design-a-contrast-bar-chart/</id>
+        <link href="https://dw.natuki.cc/post/design-a-contrast-bar-chart/">
+        </link>
+        <updated>2020-08-14T13:16:46.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://dw.natuki.cc/post-images/1597413807789.png" alt="" loading="lazy"><br>
+柱状图是用竖直的柱子来展现数据，一般用于展现横向的数据变化及对比。在预期与实际的数据对比中，我们还可以通过设计如下的柱状图以达到更好的对比效果。以下将介绍一种对比柱状图的设计方法。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://dw.natuki.cc/post-images/1597413807789.png" alt="" loading="lazy"><br>
+柱状图是用竖直的柱子来展现数据，一般用于展现横向的数据变化及对比。在预期与实际的数据对比中，我们还可以通过设计如下的柱状图以达到更好的对比效果。以下将介绍一种对比柱状图的设计方法。</p>
+<!-- more -->
+<h2 id="原始数据">原始数据</h2>
+<table>
+<thead>
+<tr>
+<th>城市</th>
+<th>实际完成销售额</th>
+<th>计划完成销售额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>天津市</td>
+<td>707</td>
+<td>800</td>
+</tr>
+<tr>
+<td>石家庄市</td>
+<td>358</td>
+<td>500</td>
+</tr>
+<tr>
+<td>太原市</td>
+<td>590</td>
+<td>650</td>
+</tr>
+<tr>
+<td>上海市</td>
+<td>433</td>
+<td>500</td>
+</tr>
+<tr>
+<td>南京市</td>
+<td>355</td>
+<td>600</td>
+</tr>
+<tr>
+<td>杭州市</td>
+<td>799</td>
+<td>900</td>
+</tr>
+<tr>
+<td>济南市</td>
+<td>470</td>
+<td>750</td>
+</tr>
+<tr>
+<td>宁波市</td>
+<td>703</td>
+<td>950</td>
+</tr>
+</tbody>
+</table>
+<h2 id="设计步骤">设计步骤</h2>
+<ol>
+<li>选定数据全部范围，插入簇状柱形图<br>
+<img src="https://dw.natuki.cc/post-images/1597411725629.png" alt="" loading="lazy"></li>
+<li>选中柱状图，单击鼠标右键，选择更改系列图表类型，将实际数据显示在次坐标轴上<br>
+<img src="https://dw.natuki.cc/post-images/1597412131652.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1597412265641.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1597412350895.png" alt="" loading="lazy"></li>
+<li>选中 &quot;计划完成销售额&quot; ，单击鼠标右键，添加数据标签<br>
+<img src="https://dw.natuki.cc/post-images/1597413147871.png" alt="" loading="lazy"></li>
+<li>选中 &quot;实际完成销售额&quot; ，单击鼠标右键，添加数据标签<br>
+<img src="https://dw.natuki.cc/post-images/1597413256589.png" alt="" loading="lazy"></li>
+<li>将 &quot;实际完成销售额&quot; 的数据标签位置设置在轴内侧<br>
+<img src="https://dw.natuki.cc/post-images/1597413487389.png" alt="" loading="lazy"></li>
+<li>调整图表中 &quot;计划完成销售额&quot; 的填充颜色以及边框样式<br>
+<img src="https://dw.natuki.cc/post-images/1597413683409.png" alt="" loading="lazy"></li>
+<li>最后修改图表标题，完成对比柱状图的设计<br>
+<img src="https://dw.natuki.cc/post-images/1597413753865.png" alt="" loading="lazy"></li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Excel]不完整的比例圆环图的设计]]></title>
+        <id>https://dw.natuki.cc/post/design-an-imcompete-doughnut-chart/</id>
+        <link href="https://dw.natuki.cc/post/design-an-imcompete-doughnut-chart/">
+        </link>
+        <updated>2020-08-09T06:07:43.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://dw.natuki.cc/post-images/1596958363773.png" alt="" loading="lazy"><br>
+圆环图和饼图一样，将角度和面积作为确定每个项目数值大小的特征，能够较好地对比每个项目在总数中所占的比例，同时也能为数据的可视化增加一些趣味性，以下是一种设计不完整的比例圆环图的步骤。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://dw.natuki.cc/post-images/1596958363773.png" alt="" loading="lazy"><br>
+圆环图和饼图一样，将角度和面积作为确定每个项目数值大小的特征，能够较好地对比每个项目在总数中所占的比例，同时也能为数据的可视化增加一些趣味性，以下是一种设计不完整的比例圆环图的步骤。</p>
+<!-- more -->
+<p>比如在下面的例子中，我们需要对某地娱乐项目所占比例进行展示。</p>
+<h2 id="原始数据">原始数据</h2>
+<table>
+<thead>
+<tr>
+<th>娱乐项目</th>
+<th>所占比例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>B</td>
+<td>33%</td>
+</tr>
+<tr>
+<td>C</td>
+<td>43%</td>
+</tr>
+<tr>
+<td>D</td>
+<td>53%</td>
+</tr>
+<tr>
+<td>E</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>F</td>
+<td>73%</td>
+</tr>
+</tbody>
+</table>
+<h2 id="设计步骤">设计步骤</h2>
+<ol>
+<li>使用公式，为表格添加辅助列：<br>
+<img src="https://dw.natuki.cc/post-images/1596959002803.png" alt="" loading="lazy"></li>
+<li>选定数据全部范围，插入所占比例的圆环图图表<br>
+<img src="https://dw.natuki.cc/post-images/1596959180383.png" alt="" loading="lazy"></li>
+<li>鼠标右键单击圆环图，在数据系列格式中可以调整圆环的大小至合适的宽度<br>
+<img src="https://dw.natuki.cc/post-images/1596959321471.png" alt="" loading="lazy"></li>
+<li>依次双击图表中的辅助列部分，<strong>确保选定在设置数据点格式</strong>，将图表中辅助列部分的填充颜色设置为白色<br>
+<img src="https://dw.natuki.cc/post-images/1596959550708.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1596959625472.png" alt="" loading="lazy"></li>
+<li>同样，依次双击图表中的所占比例部分，<strong>确保选定在设置数据点格式</strong>，自定义图表中所占比例部分<br>
+<img src="https://dw.natuki.cc/post-images/1596959940778.png" alt="" loading="lazy"></li>
+<li>(可选)在第3步调整圆环宽度的设置中，我们也可以调整合适的圆环图扇区角度<br>
+<img src="https://dw.natuki.cc/post-images/1596960185836.png" alt="" loading="lazy"></li>
+</ol>
+<p>至此，不完整的比例圆环图的设计结束。</p>
+<h2 id="使用圆环图或饼图中的注意事项">使用圆环图或饼图中的注意事项</h2>
+<p>推荐几篇Excel在数据可视化中，圆环图以及饼形图的适用范围参考：</p>
+<ul>
+<li><a href="https://vis.baidu.com/chartusage/pie/">ECharts数据可视化实验室 - 饼图</a></li>
+<li><a href="https://www.sohu.com/a/225635806_487620">可视化多样性展示：圆环图非常有用 — 没错，真的！</a></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Excel] 常用的图表配色]]></title>
+        <id>https://dw.natuki.cc/post/excel-table-color-scheme/</id>
+        <link href="https://dw.natuki.cc/post/excel-table-color-scheme/">
+        </link>
+        <updated>2020-08-09T03:59:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>当掌握Excel的使用技巧之后，表格的差异之处更多在于审美的不同。在Excel表格中，图表色彩的搭配也在设计中占据了极其重要的位置，下面将提供几个不易出错的图表配色方案以及色板网站。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>当掌握Excel的使用技巧之后，表格的差异之处更多在于审美的不同。在Excel表格中，图表色彩的搭配也在设计中占据了极其重要的位置，下面将提供几个不易出错的图表配色方案以及色板网站。</p>
+<!-- more -->
+<h2 id="常用配色">常用配色</h2>
+<p><img src="https://dw.natuki.cc/post-images/1596946621147.jpg" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1596946280298.jpg" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1596946298220.jpg" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1596946310256.jpg" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1596946394399.jpg" alt="" loading="lazy"></p>
+<h2 id="色板网站">色板网站</h2>
+<p><a href="https://colorhunt.co">Color Hunt</a>：高质量的色板，方便快速查看，如果你只需要4种颜色的话会很有用。<br>
+<a href="https://www.colourlovers.com">COLOURlovers</a>：很棒的色彩交流社区，还有各种工具可以用来做配色设计。<br>
+<a href="https://palettab.com">Palettab</a> ：提供颜色和字体方案的浏览器插件(支持Chrome和Firefox)</p>
+<h2 id="文章参考">文章参考</h2>
+<p>参考自知乎：<a href="https://www.zhihu.com/question/50894840/answer/734040492">https://www.zhihu.com/question/50894840/answer/734040492</a></p>
+]]></content>
+    </entry>
+</feed>

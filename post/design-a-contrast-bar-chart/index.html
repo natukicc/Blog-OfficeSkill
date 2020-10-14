@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>[Excel]对比柱状图的设计 | Office技巧笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://dw.natuki.cc/favicon.ico?v=1602654905859">
+<link rel="stylesheet" href="https://dw.natuki.cc/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+柱状图是用竖直的柱子来展现数据，一般用于展现横向的数据变化及对比。在预期与实际的数据对比中，我们还可以通过设计如下的柱状图以达到更好的对比效果。以下将介绍一种对比柱状图的设计方法。
+
+原始数据
+
+
+
+城市
+实际完成销售额
+计划完成销售额
+..." />
+    <meta name="keywords" content="柱状图,Excel,设计,图表" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://dw.natuki.cc">
+        <img src="https://dw.natuki.cc/images/avatar.png?v=1602654905859" class="site-logo">
+        <h1 class="site-title">Office技巧笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://dw.natuki.cc" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://dw.natuki.cc/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">[Excel]对比柱状图的设计</h2>
+            <div class="post-date">2020-08-14</div>
+            
+            <div class="post-content" v-pre>
+              <p><img src="https://dw.natuki.cc/post-images/1597413807789.png" alt="" loading="lazy"><br>
+柱状图是用竖直的柱子来展现数据，一般用于展现横向的数据变化及对比。在预期与实际的数据对比中，我们还可以通过设计如下的柱状图以达到更好的对比效果。以下将介绍一种对比柱状图的设计方法。</p>
+<!-- more -->
+<h2 id="原始数据">原始数据</h2>
+<table>
+<thead>
+<tr>
+<th>城市</th>
+<th>实际完成销售额</th>
+<th>计划完成销售额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>天津市</td>
+<td>707</td>
+<td>800</td>
+</tr>
+<tr>
+<td>石家庄市</td>
+<td>358</td>
+<td>500</td>
+</tr>
+<tr>
+<td>太原市</td>
+<td>590</td>
+<td>650</td>
+</tr>
+<tr>
+<td>上海市</td>
+<td>433</td>
+<td>500</td>
+</tr>
+<tr>
+<td>南京市</td>
+<td>355</td>
+<td>600</td>
+</tr>
+<tr>
+<td>杭州市</td>
+<td>799</td>
+<td>900</td>
+</tr>
+<tr>
+<td>济南市</td>
+<td>470</td>
+<td>750</td>
+</tr>
+<tr>
+<td>宁波市</td>
+<td>703</td>
+<td>950</td>
+</tr>
+</tbody>
+</table>
+<h2 id="设计步骤">设计步骤</h2>
+<ol>
+<li>选定数据全部范围，插入簇状柱形图<br>
+<img src="https://dw.natuki.cc/post-images/1597411725629.png" alt="" loading="lazy"></li>
+<li>选中柱状图，单击鼠标右键，选择更改系列图表类型，将实际数据显示在次坐标轴上<br>
+<img src="https://dw.natuki.cc/post-images/1597412131652.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1597412265641.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1597412350895.png" alt="" loading="lazy"></li>
+<li>选中 &quot;计划完成销售额&quot; ，单击鼠标右键，添加数据标签<br>
+<img src="https://dw.natuki.cc/post-images/1597413147871.png" alt="" loading="lazy"></li>
+<li>选中 &quot;实际完成销售额&quot; ，单击鼠标右键，添加数据标签<br>
+<img src="https://dw.natuki.cc/post-images/1597413256589.png" alt="" loading="lazy"></li>
+<li>将 &quot;实际完成销售额&quot; 的数据标签位置设置在轴内侧<br>
+<img src="https://dw.natuki.cc/post-images/1597413487389.png" alt="" loading="lazy"></li>
+<li>调整图表中 &quot;计划完成销售额&quot; 的填充颜色以及边框样式<br>
+<img src="https://dw.natuki.cc/post-images/1597413683409.png" alt="" loading="lazy"></li>
+<li>最后修改图表标题，完成对比柱状图的设计<br>
+<img src="https://dw.natuki.cc/post-images/1597413753865.png" alt="" loading="lazy"></li>
+</ol>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://dw.natuki.cc/tag/_AcNoU7Gs/" class="tag">
+                    柱状图
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/Z6vWhgthR/" class="tag">
+                    Excel
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/vNpeOQMG_V/" class="tag">
+                    设计
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/JpssOjCGES/" class="tag">
+                    图表
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://dw.natuki.cc/post/design-an-imcompete-doughnut-chart/">
+                  <h3 class="post-title">
+                    [Excel]不完整的比例圆环图的设计
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
