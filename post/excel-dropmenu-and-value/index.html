@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>[Excel]交互式表单设计: 下拉菜单和值显示 | Office技巧笔记</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://dw.natuki.cc/favicon.ico?v=1604593042247">
+<link rel="stylesheet" href="https://dw.natuki.cc/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="在Excel表格的制作中，可能不尽是静态的数据报表，有时我们需要允许用户输入一些值，但也有些时候值不能由用户随意填写，最好的情况是能够给用户一些可供选择的选项。此时，下拉菜单是一种不错的选择。那么，在Excel中应该如何设计下拉菜单，又怎么..." />
+    <meta name="keywords" content="函数,Excel" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://dw.natuki.cc">
+        <img src="https://dw.natuki.cc/images/avatar.png?v=1604593042247" class="site-logo">
+        <h1 class="site-title">Office技巧笔记</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://dw.natuki.cc" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://dw.natuki.cc/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://dw.natuki.cc/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">[Excel]交互式表单设计: 下拉菜单和值显示</h2>
+            <div class="post-date">2020-11-05</div>
+            
+            <div class="post-content" v-pre>
+              <p>在Excel表格的制作中，可能不尽是静态的数据报表，有时我们需要允许用户输入一些值，但也有些时候值不能由用户随意填写，最好的情况是能够给用户一些可供选择的选项。此时，下拉菜单是一种不错的选择。那么，在Excel中应该如何设计下拉菜单，又怎么将菜单选项对应到特定的值呢？</p>
+<!-- more -->
+<h2 id="情景引入">情景引入</h2>
+<p>考虑如下的情景，你需要完成一份班级的考核成绩表，在考核成绩中有5个等级：优秀、良好、中等、及格、不及格，分别对应90分、80分、70分、60分、50分，<br>
+<img src="https://dw.natuki.cc/post-images/1604585082436.png" alt="" loading="lazy"><br>
+<img src="https://dw.natuki.cc/post-images/1604585221845.png" alt="" loading="lazy"></p>
+<h2 id="下拉菜单的设计">下拉菜单的设计</h2>
+<ol>
+<li>
+<p>先创建一个含菜单选项的辅助列<br>
+<img src="https://dw.natuki.cc/post-images/1604589151191.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>选中需要设置下拉菜单的单元格<br>
+<img src="https://dw.natuki.cc/post-images/1604589207219.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>为选中的单元格在顶部选项卡找到 数据-&gt;数据验证<br>
+<img src="https://dw.natuki.cc/post-images/1604589312225.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>在窗口中将所允许的值设置为序列，可以直接用鼠标选取辅助列的内容作为来源，点击确定按钮<br>
+<img src="https://dw.natuki.cc/post-images/1604590492350.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>至此，选中的单元格均已被设置下拉菜单<br>
+<img src="https://dw.natuki.cc/post-images/1604590726920.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+<h2 id="为选项设置对应的值">为选项设置对应的值</h2>
+<p><img src="https://dw.natuki.cc/post-images/1604590981672.png" alt="" loading="lazy"><br>
+那么，又如何将考核成绩中的等级换算成对应的成绩呢？</p>
+<h3 id="似乎if语句可以解决">似乎...IF语句可以解决</h3>
+<p>小白表示：<br>
+<img src="https://dw.natuki.cc/post-images/1604591253819.jpg" alt="" loading="lazy"><br>
+然后上来就是一段(以要换算C9单元格中的考核等级为例)：</p>
+<pre><code>=IF(C9=&quot;优秀&quot;,90,IF(C9=&quot;良好&quot;,80,IF(C9=&quot;中等&quot;,70,IF(C9=&quot;及格&quot;,60,IF(C9=&quot;不及格&quot;,50)))))
+</code></pre>
+<p>换算功能的确实现了，但似乎IF公式的嵌套让人眼花缭乱，末尾的括号层数甚至已经超过了下巴的层数，变得臃肿起来。如果选项更多一些呢？...</p>
+<h3 id="我想要文艺一些">我想要文艺一些</h3>
+<p>似乎我们需要更文艺的方法...还记得VLOOKUP函数吗？<br>
+在之前的例子中，我们使用VLOOKUP函数实现了从水果名称到单价的对应查询，那么能不能使用同样的方法实现从等级到成绩的对应呢？</p>
+<ol>
+<li>
+<p>在辅助列后添加对应的成绩列<br>
+<img src="https://dw.natuki.cc/post-images/1604591980435.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>为显示换算成绩的单元格添加VLOOKUP函数<br>
+<img src="https://dw.natuki.cc/post-images/1604592246367.png" alt="" loading="lazy"></p>
+</li>
+</ol>
+<pre><code>=VLOOKUP(D4,$H$3:$I$7, 2, FALSE)
+</code></pre>
+<p>意思就是从H3到I7范围内的 第一列 找到与D4单元格相同的值，并显示其对应的 第二列 的内容(即D4单元格内容如果为&quot;优秀&quot;则对应显示90，&quot;良好&quot;对应显示80...以此类推)</p>
+<p>而公式第二个参数使用<code>$H$3:$I$7</code>(绝对引用)而不是<code>H3:I7</code>(相对引用)是为什么呢？<br>
+原因在于目前只对一个D4单元格设置了公式，如果我们需要下拉把公式填充到其他单元格时，相对引用会导致VLOOKUP公式中的第二个参数范围同时向下改变，绝对引用则不会出现这样的问题。</p>
+<ol start="3">
+<li>将公式下拉填充到其他单元格，至此，考核等级与成绩的对应完成<br>
+<img src="https://dw.natuki.cc/post-images/1604592936761.png" alt="" loading="lazy"></li>
+</ol>
+<p>(完)<br>
+Author: Natuki</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://dw.natuki.cc/tag/eLw622FLt/" class="tag">
+                    函数
+                  </a>
+                
+                  <a href="https://dw.natuki.cc/tag/Z6vWhgthR/" class="tag">
+                    Excel
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://dw.natuki.cc/post/how-to-use-conditional-formatting/">
+                  <h3 class="post-title">
+                    [Excel]设计表格时常用的自带功能介绍: 条件格式
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
